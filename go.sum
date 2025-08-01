@@ -2,5 +2,5 @@ github.com/pkg/errors v0.9.1 h1:FEBLx1zS214owpjy7qsBeixbURkuhQAwrK5UwLGTwt4=
 github.com/pkg/errors v0.9.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=
 github.com/wsva/lib_go v1.0.0 h1:15jcK/gwKlC8z+cYt7D9PCv/T+Sh+l1b1NIVf/KDybc=
 github.com/wsva/lib_go v1.0.0/go.mod h1:JO5S954opHbPWOm+LiS4c7SkPj34Wb0KHcr3e/gUWg4=
-github.com/wsva/monitor_lib_go v1.0.0 h1:jgYxBUJcLes5KHgRNGvn8/GyycoeUyI+aCH/S8pixtk=
-github.com/wsva/monitor_lib_go v1.0.0/go.mod h1:0Xmq6TSKLxiBNR2+FIFQ8HTgvfH1HBWoMAzQcADDynM=
+github.com/wsva/monitor_lib_go v1.0.1 h1:lrCnPUXN4pqd8lcYYFr657tzGSw5QLcR8+lqlSpbdVQ=
+github.com/wsva/monitor_lib_go v1.0.1/go.mod h1:0Xmq6TSKLxiBNR2+FIFQ8HTgvfH1HBWoMAzQcADDynM=

@@ -12,7 +12,6 @@ import (
 	wl_fs "github.com/wsva/lib_go/fs"
 	wl_http "github.com/wsva/lib_go/http"
 	mlib "github.com/wsva/monitor_lib_go"
-	ml_detail "github.com/wsva/monitor_lib_go/detail"
 )
 
 type TargetWebService struct {
@@ -71,16 +70,16 @@ func initGlobals() error {
 func checkWebService(t TargetWebService, wg *sync.WaitGroup) {
 	defer wg.Done()
 
-	var md ml_detail.MDCommon
+	var md mlib.MDCommon
 	defer func() {
 		jsonString, err := md.JSONString()
 		resultsRuntimeLock.Lock()
 		if err != nil {
 			resultsRuntime = append(resultsRuntime,
-				mlib.GetMR(t.Name, t.Address, mlib.MTypeWebService, "", err.Error()))
+				mlib.NewMR(t.Name, t.Address, "web_service", "", err.Error()))
 		} else {
 			resultsRuntime = append(resultsRuntime,
-				mlib.GetMR(t.Name, t.Address, mlib.MTypeWebService, jsonString, ""))
+				mlib.NewMR(t.Name, t.Address, "web_service", jsonString, ""))
 		}
 		resultsRuntimeLock.Unlock()
 	}()
